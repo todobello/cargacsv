@@ -14,16 +14,6 @@ st.title('Aplicación de Análisis de Datos')
 # Cargar el archivo CSV
 uploaded_file = st.file_uploader('Sube tu archivo CSV', type=['csv'])
 if uploaded_file is not None:
-# Leer el archivo CSV usando Pandas
-    df = pd.read_csv(uploaded_file)
-# Mostrar las primeras filas del archivo
-    st.write('Primeras 5 filas del archivo:')
-    st.write(df.head())
-
-
-
-
-if uploaded_file is not None:
 # Leer el archivo CSV
     df = pd.read_csv(uploaded_file)
 # Mostrar la estructura del DataFrame
@@ -38,4 +28,5 @@ float(df[col].min()), float(df[col].max()))
     # Mostrar los datos filtrados
     st.write(f'Datos filtrados donde {col} >= {valor_min}:')
     st.write(df_filtrado)
+
 
