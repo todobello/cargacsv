@@ -28,5 +28,3 @@ float(df[col].min()), float(df[col].max()))
     # Mostrar los datos filtrados
     st.write(f'Datos filtrados donde {col} >= {valor_min}:')
     st.write(df_filtrado)
-
-
